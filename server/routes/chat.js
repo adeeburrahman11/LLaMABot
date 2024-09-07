@@ -1,5 +1,5 @@
 const express = require("express");
-const generateResponse = require("../llama");
+const generateResponse = require("./llama");
 const Conversation = require("../models/Conversation");
 const router = express.Router();
 
