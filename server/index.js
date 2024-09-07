@@ -6,6 +6,9 @@ const app = express();
 const server = http.createServer(app);
 const io = new Server(server, { cors: { origin: "*" } });
 
+const chatRoutes = require("./routes/chat");
+app.use("/api/chat", chatRoutes);
+
 app.use(cors());
 app.use(express.json());
 
